@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="sdhz151"
+          fetch="https://github.com"
+          review=".." />           
+
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.org" />
@@ -18,11 +22,23 @@
            sync-c="true"
            sync-j="4" />
 
-  <!-- AOSP Projects -->
-
-  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed">
+  <!-- sdhz151 Projects -->
+  <project path="build" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="android" remote="sdhz151" revision="cm-14.1" name="sdhz151/android" />
+  <project path="packages/apps/CMFileManager" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_packages_apps_CMFileManager" />
+  <project path="packages/apps/CMParts" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_packages_apps_CMParts" />
+  <project path="packages/apps/Settings" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_packages_apps_Settings" groups="pdk-fs" />
+  <project path="packages/apps/Dialer" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_packages_apps_Dialer" groups="pdk-fs" />
+  <project path="packages/apps/Calendar" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_packages_apps_Calendar" groups="pdk-fs" />
+  <project path="packages/providers/PhoneLocationProvider" remote="sdhz151" revision="cm-13.0" name="sdhz151/android_packages_provider_PhoneLocationProvider" />
+  <project path="packages/apps/Messaging" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_packages_apps_Messaging" groups="pdk-fs" />
+  <project path="frameworks/base" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+  <project path="vendor/cm" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_vendor_cm" />
+  <project path="external/suda/SudaSDKs" remote="sdhz151" revision="cm-14.0" name="sdhz151/android_external_suda_SudaSDKs-1" />
+  <!-- AOSP Projects -->
+
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/kati" name="CyanogenMod/android_build_kati" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="aosp" >
@@ -300,7 +316,6 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
@@ -373,7 +388,6 @@
   <project path="ndk" name="platform/ndk" groups="generic_fs" remote="aosp" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Calendar" name="CyanogenMod/android_packages_apps_Calendar" groups="pdk-fs" />
   <project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" groups="pdk-fs" />
   <project path="packages/apps/CarrierConfig" name="CyanogenMod/android_packages_apps_CarrierConfig" groups="pdk-fs" />
   <project path="packages/apps/CellBroadcastReceiver" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" groups="pdk-fs" />
@@ -381,7 +395,6 @@
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" groups="pdk-fs" />
   <project path="packages/apps/ContactsCommon" name="CyanogenMod/android_packages_apps_ContactsCommon" groups="pdk-fs" />
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" groups="pdk-fs" />
-  <project path="packages/apps/Dialer" name="CyanogenMod/android_packages_apps_Dialer" groups="pdk-fs" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" groups="pdk-fs" />
   <project path="packages/apps/EmergencyInfo" name="CyanogenMod/android_packages_apps_EmergencyInfo" />
   <project path="packages/apps/ExactCalculator" name="CyanogenMod/android_packages_apps_ExactCalculator" groups="pdk-fs" />
@@ -390,14 +403,12 @@
   <project path="packages/apps/KeyChain" name="CyanogenMod/android_packages_apps_KeyChain" groups="pdk-fs" />
   <project path="packages/apps/Launcher3" name="CyanogenMod/android_packages_apps_Launcher3" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="CyanogenMod/android_packages_apps_ManagedProvisioning" groups="pdk-fs" />
-  <project path="packages/apps/Messaging" name="CyanogenMod/android_packages_apps_Messaging" groups="pdk-fs" />
   <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" groups="pdk-fs" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/SafetyRegulatoryInfo" name="CyanogenMod/android_packages_apps_SafetyRegulatoryInfo" />
-  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" groups="apps_stk,pdk-fs" />
   <project path="packages/apps/StorageManager" name="CyanogenMod/android_packages_apps_StorageManager" />
