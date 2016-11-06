@@ -35,6 +35,7 @@
   <project path="packages/providers/PhoneLocationProvider" remote="sdhz151" revision="cm-13.0" name="sdhz151/android_packages_provider_PhoneLocationProvider" />
   <project path="packages/apps/Messaging" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_packages_apps_Messaging" groups="pdk-fs" />
   <project path="packages/services/Telecomm" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/apps/OmniSwitch" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_packages_apps_OmniSwitch" />
   <project path="frameworks/base" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <project path="vendor/cm" remote="sdhz151" revision="cm-14.1" name="sdhz151/android_vendor_cm" />
   <project path="external/suda/SudaSDKs" remote="sdhz151" revision="cm-14.0" name="sdhz151/android_external_suda_SudaSDKs-1" />
