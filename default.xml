@@ -32,7 +32,7 @@
   <project path="packages/apps/Eleven" remote="CM-CN" revision="sm-2.0" name="CM-CN/android_packages_apps_Eleven" />
   <project path="packages/apps/Settings" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_packages_apps_Settings" groups="pdk-fs" />
   <project path="packages/apps/Dialer" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_packages_apps_Dialer" groups="pdk-fs" />
-  <project path="android_packages_apps_InCallUI" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_packages_apps_InCallUI" groups="pdk-fs" />
+  <project path="packages/apps/android_packages_apps_InCallUI" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_packages_apps_InCallUI" groups="pdk-fs" />
   <project path="packages/apps/Calendar" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_packages_apps_Calendar" groups="pdk-fs" />
   <project path="packages/providers/PhoneLocationProvider" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_packages_provider_PhoneLocationProvider" />
   <project path="packages/apps/Messaging" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_packages_apps_Messaging" groups="pdk-fs" />
