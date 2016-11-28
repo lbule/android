@@ -40,7 +40,7 @@
   <project path="packages/apps/ContactsCommon" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_packages_apps_ContactsCommon" groups="pdk-fs" />
   <project path="frameworks/base" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <project path="vendor/cm" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_vendor_cm" />
-  <project path="external/suda/SudaSDKs" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_external_suda_SudaSDKs-1" />
+  <project path="external/suda/SudaSDKs" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_external_suda_SudaSDKs" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
