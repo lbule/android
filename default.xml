@@ -27,8 +27,8 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="android" remote="CM-CN" revision="cm-13.0" name="CM-CN/android" />
-  <project path="frameworks/smartisan" name="CyanogenMod/android_frameworks_smartisan" /> 
-  <project path="packages/apps/OneStep" name="CyanogenMod/android_packages_apps_OneStep" />
+  <project path="frameworks/smartisan" remote="CM-CN" revision="mkm" name="CM-CN/android_frameworks_smartisan" /> 
+  <project path="packages/apps/OneStep" remote="CM-CN" revision="mkm" name="CM-CN/android_packages_apps_OneStep" />
   <project path="packages/apps/CMFileManager" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_packages_apps_CMFileManager" />
   <project path="packages/apps/CMUpdater" remote="CM-CN" revision="cm-13.0" name="CM-CN/android_packages_apps_CMUpdater" />
   <project path="packages/apps/Eleven" remote="CM-CN" revision="sm-2.0" name="CM-CN/android_packages_apps_Eleven" />
