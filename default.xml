@@ -2,9 +2,10 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://aosp.tuna.tsinghua.edu.cn"
+           fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
            revision="refs/tags/android-6.0.1_r78" />
+
   <remote name="CM-CN"
           fetch="https://github.com"
           review=".." />    
